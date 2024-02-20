@@ -1,79 +1,87 @@
 <!DOCTYPE html>
-<html lang="en" style="color-scheme: dark;"><head>
+<html><head>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-    <meta charset="UTF-8">
-    <link rel="icon" type="image/svg+xml" href="https://880559245471408169.discordsays.com/assets/favicon.17e50649.svg">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IFrame Playground</title>
-    
-<script type="text/javascript" nonce="">
-RTCPeerConnection = null;
-WebTransport = null;
-</script>
-<script type="module" crossorigin="" src="IFrame%20Playground_files/index.ed1f3e21.js"></script>
-    <link rel="stylesheet" href="IFrame%20Playground_files/index.458f9883.css">
-  <style></style></head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <title>Not Found</title>
+    <style media="screen">
+      :root {
+        --bg: hsl(250, 24%, 9%);
+        --fg: hsl(0, 0%, 100%);
+        --pink: hsl(270, 60%, 52%);
+      }
+
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        overflow: hidden;
+        background-color: var(--bg);
+        color: var(--fg);
+        font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+          Oxygen-Sans, Ubuntu, Cantarell, Helvetica Neue, sans-serif,
+          Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+      }
+
+      main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 16px;
+        height: 100%;
+      }
+
+      .logo {
+        width: 160px;
+        height: 160px;
+      }
+
+      main h1 {
+        font-size: 32px;
+        font-weight: 700;
+      }
+
+      main a {
+        appearance: none;
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: var(--fg);
+        background-color: var(--pink);
+        padding: 12px 24px;
+        border-radius: 6px;
+      }
+
+      main a:hover {
+        background-color: hsl(270, 60%, 42%);
+      }
+
+      h1 {
+        display: none;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+      }
+
+      .error-404 {
+        display: block;
+      }
+    </style>
+  </head>
+
   <body>
-    <div id="root"><div class="c-iuNfCP t-jYPrEA"><div class="c-exjnWS"><div dir="ltr" class="c-fxrEBZ c-fxrEBZ-ictMeVh-css" style="position: relative; --radix-scroll-area-corner-width: 0px; --radix-scroll-area-corner-height: 0px;"><style>[data-radix-scroll-area-viewport]{scrollbar-width:none;-ms-overflow-style:none;-webkit-overflow-scrolling:touch;}[data-radix-scroll-area-viewport]::-webkit-scrollbar{display:none}</style><div data-radix-scroll-area-viewport="" class="c-CnFzT" style="overflow: hidden scroll;"><div style="min-width: 100%; display: table;"><ul class="c-fixGjY"><li class="c-gQHbmG c-gQHbmG-fMMmUy-selected-true"><a href="https://880559245471408169.discordsays.com/">Home</a></li><li class="c-gQHbmG"><a href="https://880559245471408169.discordsays.com/avatar-and-name">Avatar and Name</a></li><li class="c-gQHbmG"><a href="https://880559245471408169.discordsays.com/guilds">Guilds</a></li><li class="c-gQHbmG"><a href="https://880559245471408169.discordsays.com/voice-settings">Voice Settings</a></li><li class="c-gQHbmG"><a href="https://880559245471408169.discordsays.com/voice-state">Voice State</a></li><li class="c-gQHbmG"><a href="https://880559245471408169.discordsays.com/url-mapping-parameters">URL Mapping Parameters</a></li><li class="c-gQHbmG"><a href="https://880559245471408169.discordsays.com/activity-channel">Activity Channel</a></li><li class="c-gQHbmG"><a href="https://880559245471408169.discordsays.com/current-guild">Current Guild</a></li><li class="c-gQHbmG"><a href="https://880559245471408169.discordsays.com/layout-mode">Layout Mode</a></li><li class="c-gQHbmG"><a href="https://880559245471408169.discordsays.com/platform-behaviors">Platform Behaviors</a></li><li class="c-gQHbmG"><a href="https://880559245471408169.discordsays.com/open-external-link">Open External Link</a></li><li class="c-gQHbmG"><a href="https://880559245471408169.discordsays.com/encourage-hw-acc">Encourage Hardware Acceleration</a></li><li class="c-gQHbmG"><a href="https://880559245471408169.discordsays.com/set-orientation-lock-state">Orientation Lock State</a></li><li class="c-gQHbmG"><a href="https://880559245471408169.discordsays.com/orientation-updates">Orientation Updates</a></li><li class="c-gQHbmG"><a href="https://880559245471408169.discordsays.com/open-invite-dialog">Open Invite Dialog</a></li><li class="c-gQHbmG"><a href="https://880559245471408169.discordsays.com/open-share-moment-dialog">Open Share Moment Dialog</a></li><li class="c-gQHbmG"><a href="https://880559245471408169.discordsays.com/open-attachment-upload">Open Attachment Upload</a></li><li class="c-gQHbmG"><a href="https://880559245471408169.discordsays.com/safe-areas">Safe Areas</a></li><li class="c-gQHbmG"><a href="https://880559245471408169.discordsays.com/in-app-purchase">In App Purchase</a></li><li class="c-gQHbmG"><a href="https://880559245471408169.discordsays.com/thermal-states">Thermal States</a></li><li class="c-gQHbmG"><a href="https://880559245471408169.discordsays.com/visibility-listener">Visibility Listener</a></li><li class="c-gQHbmG"><a href="https://880559245471408169.discordsays.com/window-size-tracker">Window Size Tracker</a></li><li class="c-gQHbmG"><a href="https://880559245471408169.discordsays.com/instance">Instance Debug</a></li></ul></div></div></div><div dir="ltr" class="c-fxrEBZ c-fxrEBZ-ibPNjhd-css" style="position: relative; --radix-scroll-area-corner-width: 0px; --radix-scroll-area-corner-height: 0px;"><style>[data-radix-scroll-area-viewport]{scrollbar-width:none;-ms-overflow-style:none;-webkit-overflow-scrolling:touch;}[data-radix-scroll-area-viewport]::-webkit-scrollbar{display:none}</style><div data-radix-scroll-area-viewport="" class="c-CnFzT c-CnFzT-ifGHEql-css" style="overflow: hidden scroll;"><div style="min-width: 100%; display: table;"><div style="padding: 32px;">Welcome
- to the iframe playground. This application is for testing rpc and api 
-calls inside of a Discord Activity, embedded in an iframe.<div><button>Click here to close.</button></div></div></div></div></div></div></div></div>
-    
+    <main>
+      <svg class="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" fill="none">
+        <path d="M4.756 438.175A520.713 520.713 0 0 0 0 489.735h777.799c-2.716-5.306-6.365-10.09-10.045-14.772-132.97-171.791-204.498-156.896-306.819-161.26-34.114-1.403-57.249-1.967-193.037-1.967-72.677 0-151.688.185-228.628.39-9.96 26.884-19.566 52.942-24.243 74.14h398.571v51.909H4.756ZM783.93 541.696H.399c.82 13.851 2.112 27.517 3.978 40.999h723.39c32.248 0 50.299-18.297 56.162-40.999ZM45.017 724.306S164.941 1018.77 511.46 1024c207.112 0 385.071-123.006 465.907-299.694H45.017Z" fill="#fff"></path>
+        <path d="M511.454 0C319.953 0 153.311 105.16 65.31 260.612c68.771-.144 202.704-.226 202.704-.226h.031v-.051c158.309 0 164.193.707 195.118 1.998l19.149.706c66.7 2.224 148.683 9.384 213.19 58.19 35.015 26.471 85.571 84.896 115.708 126.52 27.861 38.499 35.876 82.756 16.933 125.158-17.436 38.97-54.952 62.215-100.383 62.215H16.69s4.233 17.944 10.58 37.751h970.632A510.385 510.385 0 0 0 1024 512.218C1024.01 229.355 794.532 0 511.454 0Z" fill="#fff"></path>
+      </svg>
+
+      <h1 class="error-404">Nothing here... yet</h1>
+      <h1 class="error-503">Application failed to respond</h1>
+
+      <a href="https://railway.app/" target="_blank"> Go to Railway </a>
+    </main>
   
 
-</body><style id="stylish-156" class="stylish" type="text/css">/* ==UserStyle==
-@name         Restore Twitter Logo
-@version      20230724.16.39
-@namespace    userstyles.world/user/knuxify
-@description  Get rid of the new X logo (X.Org, anyone?), and bring back the good old Twitter logo. (As if anyone was going to call it "X" anyways...)
-@author       knuxify
-@license      CC0
-==/UserStyle== */
-
-@-moz-document domain("twitter.com") {
-h1 > a[href="/home"] svg, #placeholder svg, svg[aria-label="Twitter"], div[data-testid=interstitialGraphic] svg.r-13v1u17 {
-    fill: none;
-    mask-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIGNsYXNzPSJyLTEzdjF1MTcgci00cXRxcDkgci15eXl5b28gci0xNnkydW94IHItOGt6MGdrIHItZG5tcnpzIHItYm53cWltIHItMXBsY3J1aSByLWxydmliciByLWxyc2xscCIgdmlld0JveD0iMCAwIDI0IDI0Ij48Zz48cGF0aCBkPSJNMjMuNjQzIDQuOTM3Yy0uODM1LjM3LTEuNzMyLjYyLTIuNjc1LjczM2E0LjY3IDQuNjcgMCAwIDAgMi4wNDgtMi41NzggOS4zIDkuMyAwIDAgMS0yLjk1OCAxLjEzIDQuNjYgNC42NiAwIDAgMC03LjkzOCA0LjI1IDEzLjIyOSAxMy4yMjkgMCAwIDEtOS42MDItNC44NjhjLS40LjY5LS42MyAxLjQ5LS42MyAyLjM0MkE0LjY2IDQuNjYgMCAwIDAgMy45NiA5LjgyNGE0LjY0NyA0LjY0NyAwIDAgMS0yLjExLS41ODN2LjA2YTQuNjYgNC42NiAwIDAgMCAzLjczNyA0LjU2OCA0LjY5MiA0LjY5MiAwIDAgMS0yLjEwNC4wOCA0LjY2MSA0LjY2MSAwIDAgMCA0LjM1MiAzLjIzNCA5LjM0OCA5LjM0OCAwIDAgMS01Ljc4NiAxLjk5NSA5LjUgOS41IDAgMCAxLTEuMTEyLS4wNjUgMTMuMTc1IDEzLjE3NSAwIDAgMCA3LjE0IDIuMDkzYzguNTcgMCAxMy4yNTUtNy4wOTggMTMuMjU1LTEzLjI1NCAwLS4yLS4wMDUtLjQwMi0uMDE0LS42MDJhOS40NyA5LjQ3IDAgMCAwIDIuMzIzLTIuNDF6Ii8+PC9nPjwvc3ZnPg==');
-    -webkit-mask-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIGNsYXNzPSJyLTEzdjF1MTcgci00cXRxcDkgci15eXl5b28gci0xNnkydW94IHItOGt6MGdrIHItZG5tcnpzIHItYm53cWltIHItMXBsY3J1aSByLWxydmliciByLWxyc2xscCIgdmlld0JveD0iMCAwIDI0IDI0Ij48Zz48cGF0aCBkPSJNMjMuNjQzIDQuOTM3Yy0uODM1LjM3LTEuNzMyLjYyLTIuNjc1LjczM2E0LjY3IDQuNjcgMCAwIDAgMi4wNDgtMi41NzggOS4zIDkuMyAwIDAgMS0yLjk1OCAxLjEzIDQuNjYgNC42NiAwIDAgMC03LjkzOCA0LjI1IDEzLjIyOSAxMy4yMjkgMCAwIDEtOS42MDItNC44NjhjLS40LjY5LS42MyAxLjQ5LS42MyAyLjM0MkE0LjY2IDQuNjYgMCAwIDAgMy45NiA5LjgyNGE0LjY0NyA0LjY0NyAwIDAgMS0yLjExLS41ODN2LjA2YTQuNjYgNC42NiAwIDAgMCAzLjczNyA0LjU2OCA0LjY5MiA0LjY5MiAwIDAgMS0yLjEwNC4wOCA0LjY2MSA0LjY2MSAwIDAgMCA0LjM1MiAzLjIzNCA5LjM0OCA5LjM0OCAwIDAgMS01Ljc4NiAxLjk5NSA5LjUgOS41IDAgMCAxLTEuMTEyLS4wNjUgMTMuMTc1IDEzLjE3NSAwIDAgMCA3LjE0IDIuMDkzYzguNTcgMCAxMy4yNTUtNy4wOTggMTMuMjU1LTEzLjI1NCAwLS4yLS4wMDUtLjQwMi0uMDE0LS42MDJhOS40NyA5LjQ3IDAgMCAwIDIuMzIzLTIuNDF6Ii8+PC9nPjwvc3ZnPg==');
-    mask-position: center;
-    mask-repeat: no-repeat;
-    -webkit-mask-position: center;
-    -webkit-mask-repeat: no-repeat;
-    background-color: rgb(29, 155, 240);
-}
-
-@media (prefers-color-scheme: dark) {
-    h1 > a[href="/home"] svg, #placeholder svg, svg[aria-label="Twitter"], div[data-testid=interstitialGraphic] svg.r-13v1u17 {
-        background-color: rgb(214, 217, 219);
-    }
-}
-}
-.moments,
-li[data-suggestion-json*="ActivityTweet"],
-li.promoted-trend,
-li.promoted-account,
-div.promoted-tweet,
-div.promoted-tweet-heading,
-div.DashUserDropdown li>a[data-nav="all_moments"],
-div.DashUserDropdown li>a[data-nav="promote-mode"],
-div.DashUserDropdown li>a[data-nav="ads"],
-div.flex-module.trends-container,
-div.flexmodule.trends,
-div.module.trends,
-div.module.roaming-module.wtf-module.js-wtf-module.has-content,
-div.Footer.module.roaming-module,
-div.ProfileWTFAndTrends,
-div.trends-inner,
-div.flex-module.import-prompt
-  {
-    display: none !important;
-  }
-[aria-label="Twitter Blue"],
-[aria-label="Verified Organizations"],
-[aria-label="Verified"],
-[aria-label="Get Verified"]{
-    display: none;
-}
-a[href$="/analytics"] {
-    display: none;
-}
-</style></html>
+</body></html>
